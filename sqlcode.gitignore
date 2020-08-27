@@ -1,0 +1,8 @@
+/*role management - to use privilege management easily*/
+
+create role manager_role ;
+grant ALTER SYSTEM,CREATE SESSION,ALTER SESSION,CREATE USER,ALTER USER,CREATE ROLLBACK SEGMENT,ALTER ROLLBACK SEGMENT,DROP ROLLBACK SEGMENT,CREATE ANY TABLE,ALTER ANY TABLE,
+CREATE CLUSTER,CREATE ANY INDEX,CREATE ROLE,CREATE TRIGGER,CREATE PROFILE,INSERT ANY TABLE,CREATE INDEXTYPE to manager_role;
+grant manager_role to hr;
+
+/*we should be very carefull before granting any role to user*/
